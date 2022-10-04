@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="perfil.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <h1> Carousel de mascotas!</h1>
+        <div class="contenedor">
+            
+            <div class="tarjeta">
+                
+                <img src="" id="imagen">
+                <h2 id="nombre">placeholder name</h2>
+                <h4 id="titulo">placeholder title</h4>
+                <p id="texto">placeholder text</p>
+                
+            </div>
+            
+        </div>
+        
+        <button id="atras" class="btn direccion izquierda">Anterior</button>
+                <button id="avanzar" class="btn direccion derecha">Siguiente</button>
+            
+        <div class="entrada">
+            <h3>Quieres agregar tu mascota?</h3>
+            <form class="formulario">
+                <div class="form-item">
+                    <label>Tu foto de mascota(solo se aceptan enlaces que terminen en .jpg, .jpeg .png, y .gif):</label>
+                    <input id="addImagen" type="text" required>
+                </div>
+                <div class="form-item">
+                    <label>Su nombre: </label>
+                <input id="addNombre" type="text" required>
+                </div>
+                <div class="form-item">
+                    <label for="">Su especie, raza y/o genero: </label>
+                <input id="addTitulo" type="text" required>
+                </div>
+                <div class="form-item">
+                    <label for="">Su descripcion: </label>
+                <textarea id="addDesc" style="resize: none" required></textarea>
+                </div>
+                <div class="contenedor-botones">
+                    <button type="button" id="submit" class="form-item btn">Agregar!</button>
+                </div>
+            </form>
+        </div>
+    </div>   
+<script src="perfil.js"></script>
+</body>
+</html>
